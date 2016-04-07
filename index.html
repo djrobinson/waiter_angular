@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="earnApp">
+<head>
+  <title>Earnings Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body ng-controller="ResetCtrl">
+<br>
+<br>
+<div class="container">
+  <div class="row text-center">
+    <h1>Earnings Calculator</h1>
+  </div>
+  <div class="row">
+    <div class="text-center">
+      <ul>
+        <li><a href="/#/">Meal Details</a></li>
+        <li><a href="/#/charges">Charge Overview</a></li>
+        <li><a href="/#/earnings">Earnings Info</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <ng-view></ng-view>
+  <button ng-click="reset()">Reset All</button>
+</div>
+
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
+<script src="./app/app.js"></script>
+<script src="./app/services.js"></script>
+
+<script src="./app/controllers/ChargeCtrl.js"></script>
+<script src="./app/controllers/EarningCtrl.js"></script>
+<script src="./app/controllers/DetailCtrl.js"></script>
+<script src="./app/controllers/ResetCtrl.js"></script>
+
+</body>
+</html>

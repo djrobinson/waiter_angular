@@ -1,0 +1,7 @@
+
+  <h1>Overview for Meal {{mealCounter}}</h1>
+  <button ng-click="lastMeal()">Previous Meal</button><button ng-click="nextMeal()">Next Meal</button>
+
+  <h3>Subtotal: {{ meal.subTotal | currency}} </h3>
+  <h3>Tip: {{meal.tip | currency }}</h3>
+  <h3>Total: {{meal.total | currency}}</h3>
